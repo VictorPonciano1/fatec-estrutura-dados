@@ -1,0 +1,44 @@
+import java.util.Scanner;
+import java.util.Date;
+
+public class TesteOrdenacao {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int t;
+        System.out.print("digite o tamanho do vetor, 0 encerra: ");
+        t = scanner.nextInt();
+        while (t > 0) {
+            long ini, fim;
+            NossoVetor v = new NossoVetor(t);
+            v.preencheVetor();
+            //System.out.println("vetor original\n" + v);
+            Date d = new Date();
+            ini = d.getTime();
+            v.bubbleSort();
+            fim = new Date().getTime();
+            System.out.println("bubble demorou " + (fim-ini) + " milissegundos");
+            //System.out.println("vetor ordenado pelo bubble\n" + v);
+
+            v.preencheVetor();
+            ini = new Date().getTime();            
+            v.insertionSort();
+            fim = new Date().getTime();
+            System.out.println("insertion demorou " + (fim - ini) + " milissegundos");
+            
+            
+            ini = new Date().getTime();
+            v.bubbleSort();
+            fim = new Date().getTime();
+            System.out.println("bubble ordenado demorou " + (fim-ini) + " milissegundos");
+            
+            ini = new Date().getTime();
+            v.insertionSort();
+            fim = new Date().getTime();
+            System.out.println("insertion ordenado demorou " + (fim-ini) + " milissegundos");
+            
+            System.out.print("digite o novo tamanho, 0 encerra: ");
+            t = scanner.nextInt();
+        }
+        scanner.close();
+    }
+}

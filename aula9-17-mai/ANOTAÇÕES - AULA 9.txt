@@ -1,0 +1,23 @@
+/* ANOTAÇÕES - AULA 9 - 17/05/2025 */
+
+//ALOCAÇÃO EM MEMÓRIA
+-Pode ser feita de suas formas:
+*Vetor;
+*Lista Ligada;
+
+//FILA
+-Filas são estruturas FIFO (First In First Out - Primeiro a Entra, Primeiro a Sair);
+-Toda inserção é no final;
+-Toda remoção é no início;
+
+*Sobre uma lista simples, com marcador de primeiro e de último:
+prim -> [] -> [] -> ult -> \\
+
+//GERENICS
+-Geéricos: elementos genéricos (são genéricos, podem ser de vários tipos);
+-São representados pelo símbolo <> onde dentro dele está o tipo;
+-Significado dos tipos:
+*E: Element;
+*T: Type;
+*K: Key;
+*V: value;

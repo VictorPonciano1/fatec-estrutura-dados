@@ -1,0 +1,37 @@
+/* ANOTAÇÕES - AULA 6 29-03-2025 */
+
+//RESCURSÃO:
+-Caracteriza-se pela chamada de uma rotina por ela mesma;
+-Pode substituir um laço;
+*NOTA: Para não cair em chamadas infinitas, toda recursão precisa de uma condição de parada;
+*EXEMPLO: cálculo do fatorial:
+n! = { 1, se n=0, ou n=1 --- n.(n-1)!, se n > 1
+
+*UTILIZANDO LAÇOS:
+for (int i=2,f=1; i<=n; i++)
+        f *= i;
+
+*RECURSIVAMENTE:
+int fatorial (int n) {
+    if (n < 2) return 1;
+    return n * fatorial (n -1);
+}
+
+*NOTA 2: Não se usa uma recursão para se calcular um fatorial, o código apresentado se trata de um exemplo;
+
+//RESCURSÃO: DE ACORDO COM O GPT
+-A recursão em Java (ou em qualquer outra linguagem de programação) é um conceito onde um método chama a si mesmo para resolver 
+um problema. Ela é frequentemente usada para problemas que podem ser divididos em subproblemas menores, como percorrer uma 
+estrutura de dados (listas, árvores), resolver problemas matemáticos (fatorial, sequência de Fibonacci), entre outros;
+
+//CUIDADOS AO USAR RESCURSÃO:
+-Pilha de chamadas (Stack Overflow): Se a recursão não tiver um caso base claro, ela continuará indefinidamente e causará um erro 
+de estouro da pilha (stack overflow);
+-Eficiência: Em alguns casos, a recursão pode ser menos eficiente devido ao uso excessivo da pilha e ao repetido cálculo dos 
+mesmos valores. Técnicas como memoização ou recursão com "programação dinâmica" podem ser usadas para otimizar esses problemas;
+
+//PROGRAMAÇÃO DINÂMICA
+-Utiliza uma estrutura de dados para armazenar valores anteriores já calculados;
+
+//
+-

@@ -1,0 +1,45 @@
+/* ANOTAÇÕES - AULA 2 22-02-2025 */
+
+//ARRAYLIST:
+-É uma interface do Java;
+-O Java possui interface pois não têm herança múltipla;
+-O ArraList é uma "implementação" da interface "Lista" (List);
+-É dinâmico;
+
+//ASSINATURA DE UM MÉTODO:
+-Modificadores de acesso e de escopo tipo nome (conjunto de parâmetros);
+*Modificador: public;
+*Escopo: static;
+*Tipo: void;
+*Nome: main;
+*Conunto de Parâmetros: String []args;
+
+//CONSTRUTOR:
+-Não é um método;
+-É uma chamada "especial";
+-Internamente possui um "init" que já é inicializado;
+
+//MEMÓRIA GERENCIADA PELA JVM:
+-Stack: onde ficam as variáveis primitivas e as de referência - região de alocação estática definida em tempo 
+de execução;
+-Heap: Memória dinâmica;
+
+//PILARES DA ORIENTAÇÃO A OBJETOS:
+1- Encapsulamento;
+2- Herança;
+3- Polimorfismo: comportamentos de diversas formas - pode ser implementado (em Java) em: Sobrecarga, Sobreescrita
+e Generics (Genéricos);
+*Sobrecarga: conjuntos diferentes de parâmetros (em número ou tipo);
+*Sobreescrita: a Sobreescrita/Sobreposição (Override) permite que uma classe reescreva um método da sua classe 
+mãe, com suas particularidades. NÃO SE MODIFICA A ASSINATURA DO MÉTODO QUE SERÁ SOBRESCRITO - A anotação 
+"@Override" serve para avisar desenvolvedores e o compilador que a assinatura não deve ser modificada;
+
+//CLASSE: PARA CHEGAR EM HERANÇA
+-Uma classe define um conjunto de atributos e todos os comportamentos que esses atributos podem realizar;
+-Uma classe pode se relacionar com outras por associações* ou por herança;
+-A herança permite colocar elementos comuns numa classe "mãe" e as particularidades em classes "filha";
+*NOTA: Temos vários tipos de associações;
+
+//CLASSE OBJECT:
+-É a "mãe de todas as classes" no Java;
+-Entre os métodos e construtores ela fornece o construtor padrão, que "zera" todos os atributos de uma classe;

@@ -1,0 +1,26 @@
+/* ANOTAÇÕES - AULA 5 22-03-2025 */
+
+//TIPOS ABSTRATOS:
+-
+-
+
+//PILHAS (STACK):
+-Pilhas são um conjunto de dados;
+-São elementos "LIFO": Last In First Out (Última a Entrar é a Primeira a Sair);
+
+//ANOTAÇÕES DO GPT:
+-Uma pilha é uma estrutura de dados que segue o princípio Last In, First Out (LIFO), ou seja, o último elemento 
+adicionado é o topo a ser removido. As operações principais em uma pilha são:
+*push(): Adiciona um elemento no topo da pilha;
+*pop(): Remove o elemento do topo da pilha;
+
+//MÉTODOS PRINCIPAIS DE UMA CLASSE STACK:
+-Métodos principais da classe Stack:
+*push(E item): Adiciona um item na pilha;
+*pop(): Remove o item do topo da pilha e o retorna;
+*peek(): Retorna o item do topo da pilha sem removê-lo;
+*isEmpty(): Verifica se a pilha está vazia;
+*search(Object o): Retorna a posição 1-based do objeto na pilha ou -1 se não encontrado;
+
+//PILHA PERSONALIZADA:
+-Também é possível implementar uma pilha personalizada, onde você mesmo têm o seu controle;

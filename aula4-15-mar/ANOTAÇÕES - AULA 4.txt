@@ -1,0 +1,12 @@
+/* ANOTAÇÕES - AULA 4 15-03-2025 */
+
+//BUBBLE SORT (MÉTODO BOLHA): INTRODUÇÃO
+-O método bolha (ou Bubble Sort) é um algoritmo simples de ordenação que percorre uma lista, compara elementos 
+adjacentes e os troca de lugar se estiverem na ordem errada. Esse processo é repetido até que a lista esteja 
+ordenada.
+
+//BUBBLE SORT (MÉTODO BOLHA): EXPLICAÇÃO DOS COMANDOS
+-bubbleSort(): Esta é a função que implementa o algoritmo Bubble Sort. O loop externo percorre o array e o loop 
+interno compara os elementos adjacentes, trocando-os quando necessário. A flag trocou serve para verificar se 
+houve alguma troca durante a iteração. Se não houver troca, o array já está ordenado, e o algoritmo pode parar
+ mais cedo.
